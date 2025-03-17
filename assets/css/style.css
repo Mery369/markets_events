@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mea+Culpa&family=Oswald&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap');
+
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 *{
     margin: 0;
@@ -5,14 +9,41 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     color: #3a3a3a;
 }
 header {
-    background-color: rgb(231, 151, 54);
+    background-color:#ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a ;
+}
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #252525;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#menu {
+    font-size: larger;
+    letter-spacing: 4px;
+    list-style: none;
+   
+}
+#menu li{
+    margin-bottom: 1em;
+}
+.active{
+    border-bottom: 1px solid #3a3a3a;
 }
 main{
     background-color: #978846;
